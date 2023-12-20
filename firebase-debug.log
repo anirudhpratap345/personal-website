@@ -56,3 +56,118 @@
 [debug] [2023-12-20T16:17:41.736Z] Error: ENOENT: no such file or directory, open 'F:\Projects\personal-website\personal-website\.next\server\middleware-manifest.json'
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-12-20T16:21:21.687Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T16:21:21.689Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anirudh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-20T16:21:21.689Z] CLI Version:   13.0.2
+[debug] [2023-12-20T16:21:21.690Z] Platform:      win32
+[debug] [2023-12-20T16:21:21.690Z] Node Version:  v18.16.0
+[debug] [2023-12-20T16:21:21.691Z] Time:          Wed Dec 20 2023 21:51:21 GMT+0530 (India Standard Time)
+[debug] [2023-12-20T16:21:21.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T16:21:21.761Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T16:21:21.762Z] > authorizing via signed-in user (anirudhpratap006@gmail.com)
+[debug] [2023-12-20T16:21:21.762Z] [iam] checking project personal-website-55ab9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-20T16:21:21.764Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions [none]
+[debug] [2023-12-20T16:21:21.764Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions x-goog-quota-user=projects/personal-website-55ab9
+[debug] [2023-12-20T16:21:21.764Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T16:21:23.448Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions 200
+[debug] [2023-12-20T16:21:23.448Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T16:21:23.449Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 [none]
+[debug] [2023-12-20T16:21:23.960Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 200
+[debug] [2023-12-20T16:21:23.961Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 {"projectId":"personal-website-55ab9","projectNumber":"864410764192","displayName":"personal-website","name":"projects/personal-website-55ab9","resources":{"hostingSite":"personal-website-55ab9"},"state":"ACTIVE","etag":"1_0842b9b5-ac2a-415a-b36d-7d8b87c176fe"}
+[debug] [2023-12-20T16:21:28.095Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites pageToken=&pageSize=10
+[debug] [2023-12-20T16:21:31.333Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites 200
+[debug] [2023-12-20T16:21:31.333Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites {"sites":[{"name":"projects/personal-website-55ab9/sites/personal-website-55ab9","defaultUrl":"https://personal-website-55ab9.web.app","appId":"1:864410764192:web:cda561d1015882b4b59ac5","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-20T16:21:31.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config [none]
+[debug] [2023-12-20T16:21:32.651Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config 200
+[debug] [2023-12-20T16:21:32.651Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config {"projectId":"personal-website-55ab9","appId":"1:864410764192:web:cda561d1015882b4b59ac5","storageBucket":"personal-website-55ab9.appspot.com","apiKey":"AIzaSyBGhD7WWwwmwOG0HTH0d9EoaVLP-J1kWbc","authDomain":"personal-website-55ab9.firebaseapp.com","messagingSenderId":"864410764192","measurementId":"G-N8FPMF8X0J"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-20T16:21:41.565Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 [none]
+[debug] [2023-12-20T16:21:42.722Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 200
+[debug] [2023-12-20T16:21:42.723Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 {"name":"projects/personal-website-55ab9/sites/personal-website-55ab9","defaultUrl":"https://personal-website-55ab9.web.app","appId":"1:864410764192:web:cda561d1015882b4b59ac5","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.2
+
+[info] 
+   Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'F:\Projects\personal-website\personal-website\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'F:\\Projects\\personal-website\\personal-website\\.next\\trace'
+}
+
+[debug] [2023-12-20T16:21:46.436Z] Error: ENOENT: no such file or directory, open 'F:\Projects\personal-website\personal-website\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-20T16:30:43.127Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T16:30:43.129Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anirudh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-20T16:30:43.130Z] CLI Version:   13.0.2
+[debug] [2023-12-20T16:30:43.130Z] Platform:      win32
+[debug] [2023-12-20T16:30:43.130Z] Node Version:  v18.16.0
+[debug] [2023-12-20T16:30:43.131Z] Time:          Wed Dec 20 2023 22:00:43 GMT+0530 (India Standard Time)
+[debug] [2023-12-20T16:30:43.131Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T16:30:43.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T16:30:43.201Z] > authorizing via signed-in user (anirudhpratap006@gmail.com)
+[debug] [2023-12-20T16:30:43.202Z] [iam] checking project personal-website-55ab9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-20T16:30:43.204Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions [none]
+[debug] [2023-12-20T16:30:43.204Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions x-goog-quota-user=projects/personal-website-55ab9
+[debug] [2023-12-20T16:30:43.204Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T16:30:44.907Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions 200
+[debug] [2023-12-20T16:30:44.908Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-55ab9:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T16:30:44.910Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 [none]
+[debug] [2023-12-20T16:30:45.719Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 200
+[debug] [2023-12-20T16:30:45.720Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-55ab9 {"projectId":"personal-website-55ab9","projectNumber":"864410764192","displayName":"personal-website","name":"projects/personal-website-55ab9","resources":{"hostingSite":"personal-website-55ab9"},"state":"ACTIVE","etag":"1_0842b9b5-ac2a-415a-b36d-7d8b87c176fe"}
+[debug] [2023-12-20T16:30:50.126Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites pageToken=&pageSize=10
+[debug] [2023-12-20T16:30:51.455Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites 200
+[debug] [2023-12-20T16:30:51.456Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites {"sites":[{"name":"projects/personal-website-55ab9/sites/personal-website-55ab9","defaultUrl":"https://personal-website-55ab9.web.app","appId":"1:864410764192:web:cda561d1015882b4b59ac5","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-20T16:30:51.457Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config [none]
+[debug] [2023-12-20T16:30:52.582Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config 200
+[debug] [2023-12-20T16:30:52.583Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:864410764192:web:cda561d1015882b4b59ac5/config {"projectId":"personal-website-55ab9","appId":"1:864410764192:web:cda561d1015882b4b59ac5","storageBucket":"personal-website-55ab9.appspot.com","apiKey":"AIzaSyBGhD7WWwwmwOG0HTH0d9EoaVLP-J1kWbc","authDomain":"personal-website-55ab9.firebaseapp.com","messagingSenderId":"864410764192","measurementId":"G-N8FPMF8X0J"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-20T16:31:01.605Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 [none]
+[debug] [2023-12-20T16:31:02.818Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 200
+[debug] [2023-12-20T16:31:02.819Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/personal-website-55ab9/sites/personal-website-55ab9 {"name":"projects/personal-website-55ab9/sites/personal-website-55ab9","defaultUrl":"https://personal-website-55ab9.web.app","appId":"1:864410764192:web:cda561d1015882b4b59ac5","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.2
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+[info] 
+./src/app/Head.js
+5:5  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+./src/app/page.js
+17:72  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2023-12-20T16:31:48.321Z] Error: ENOENT: no such file or directory, open 'F:\Projects\personal-website\personal-website\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

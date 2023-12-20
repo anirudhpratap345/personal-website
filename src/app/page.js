@@ -14,7 +14,7 @@ const HomePage = () => {
       <div style={{ display: 'flex', height: '100vh' }}>
         <div style={{ flex: 1, padding: '20px', borderRight: '1px solid #ccc' }}>
           <div style={{ marginLeft: '10px', marginTop: '80px' }}>
-            <h1 style={{ fontWeight: 300, fontSize: '4.236rem' }}>Hi, I'm Anirudh</h1>
+            <h1 style={{ fontWeight: 300, fontSize: '4.236rem' }}>Hi, I`&apos`m Anirudh</h1>
             <p style={{ fontSize: '.955rem', lineHeight: '2.75rem' }}>
               <a href="mailto:anirudhpratap006@gmail.com" style={{ textDecoration: 'underline' }}>Email</a> |{' '}
               <a href="https://github.com/anirudhpratap345" style={{ textDecoration: 'underline' }}>GitHub</a> |{' '}
